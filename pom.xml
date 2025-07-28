@@ -73,7 +73,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build>  <!--  test pull request -->
 	<!--  first modification -->
 	<!--  second modification -->
 </project>
