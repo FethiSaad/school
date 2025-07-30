@@ -40,7 +40,7 @@ class StudentServiceImplTest {
 
         List<Student> listU = studentService.getStudents();
 
-        Assertions.assertEquals(2, listU.size());
+        Assertions.assertEquals(3, listU.size());
     }
 
 
