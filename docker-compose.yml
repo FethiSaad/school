@@ -9,7 +9,7 @@ services:
       - 3306:3306
     volumes:
       - db:/var/lib/mysql
-  app-timesheet:
+  app-school-backend:
     depends_on:
       - mysqldb
     image: fethisaad/school:1.0.0
@@ -26,6 +26,13 @@ services:
       }'
     stdin_open: true
     tty: true
-
+  app-school-frontend:
+    image: mouradhassini/student-front-image:1.0.0
+    restart: on-failure
+    ports:
+      - "8585:85"
+    depends_on:
+      - app-school-backend
+      
 volumes:
   db :
